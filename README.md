@@ -1,3 +1,3 @@
-#PDF2Image
+# PDF2Image
 
-##Converts PDFs to Image Files
+## Converts PDFs to Image Files
