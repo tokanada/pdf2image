@@ -42,6 +42,10 @@ const deleteFolderRecursive = (folderPath) => {
   }
 };
 
+app.get("/", (req, res) => {
+  res.send("Hello, world!");
+});
+
 app.post("/upload", upload.single("file"), async (req, res) => {
   if (!req.file) {
     return res.status(400).send("No file uploaded.");
@@ -120,5 +124,5 @@ app.post("/upload", upload.single("file"), async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://0.0.0.0:${PORT}`);
 });
